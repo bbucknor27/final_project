@@ -1,9 +1,13 @@
-# Banel's Final Project: Getting Started with Create React App
+# 2Banel's Final Project: Getting Started with Create React App
 
-Overview#
+##Overview
 
 For the final project, you will be tasked with extracting data from a public API and displaying it in a meaningful way on a single page application built in React. The API you use and the style and manner in which you construct your website will be entirely up to you.
-Technical Requirements#
+
+
+##Technical Requirements#
+
+<hr>
 
     Usage of a public API from this list that has been approved by your Instructor
     Make axios calls to your API using the useEffect hook
@@ -12,7 +16,7 @@ Technical Requirements#
     Utilize the .map() method to display data in a component
     Utilize useState in some way in your application
 
-Useful Resources#
+##Useful Resources
 
     Intro to React
     Components
