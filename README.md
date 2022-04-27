@@ -1,9 +1,10 @@
 # Banel's Final Project: Getting Started with Create React App
 
-##Overview
+<h2>Overview</h2>
 
 For the final project, you will be tasked with extracting data from a public API and displaying it in a meaningful way on a single page application built in React. The API you use and the style and manner in which you construct your website will be entirely up to you.
-
+<br/>
+<br/>
 <hr>
 
 <h2>Technical Requirements</h2>
@@ -15,16 +16,17 @@ For the final project, you will be tasked with extracting data from a public API
     <li>Utilize the .map() method to display data in a component</li>
     <li>Utilize useState in some way in your application</li>
 </ol>
-
+<br/>
+<br/>
 <hr>
 
 <h2>Useful Resources</h2>
 <ul>
-    <li>Intro to React</li>
-    <li>Components</li>
-    <li>IComponent Hierarchy Diagrams</li>
-    <li>IProps</li>
-    <li>IMapping Components</li>
-    <li>IState & useState</li>
-    <li>IComponent Lifecycle & useEffect</li>
-    <li>IReact w/ APIs</li>
+    <li><a href="https://github.com/JSR-2-14/u3_lesson_intro_to_react">Intro to React</a></li>
+    <li><a href="https://github.com/JSR-2-14/u3_lesson_react_components">Components</a></li>
+    <li><a href="">Component Hierarchy Diagrams</a></li>
+    <li><a href="https://github.com/JSR-2-14/u3_lesson_react_props">Props</a></li>
+    <li><a href="https://github.com/JSR-2-14/u3_lesson_react_mapping_components">Mapping Components</li>
+    <li><a href="https://github.com/JSR-2-14/u3_lesson_intro_to_state">State & useState</li>
+    <li><a href="">Component Lifecycle & useEffect</li>
+    <li><a href="https://github.com/JSR-2-14/u3_lesson_react_APIs">React w/ APIs</li>
