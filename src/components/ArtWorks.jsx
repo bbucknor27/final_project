@@ -1,16 +1,16 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const ArtWork = ({ displayArt }) => {
+const ArtWorks = ({ displayArt }) => {
   const [art, setArt] = useState('')
 
   useEffect(() => {
     try {
-      const getArtWork = async () => {
+      const getArtWorks = async () => {
         const response = await axios.get("https://api.artic.edu/api/v1/artworks/129884")
         setArt(response.data.art)
       }
-      getArtWork()
+      getArtWorks()
     } catch (error) {
       return console.error
     }
@@ -21,8 +21,10 @@ const ArtWork = ({ displayArt }) => {
   )
 }
 
-// export default ArtWork
+export default ArtWorks
 
-// change KanyeQuote to ArtWork  --  DONE
+// export default ArtWorks
+
+// change KanyeQuote to ArtWorks  --  DONE
 
 // change displayQuote to displayArt  --  DONE

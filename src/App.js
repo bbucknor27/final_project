@@ -18,7 +18,7 @@ const App = () => {
           {displayArt ? (
             <ArtWorks displayArt={displayArt} />
           ) : (
-            <h2>See Some ArtWork</h2>
+            <h2>See Some ArtWorks</h2>
           )}
         </div>
 
@@ -33,9 +33,9 @@ const App = () => {
 export default App;
 
 
-// review u3_hw_movie_mapping
+// review u3_hw_movie_mapping 
 
-// change KanyeQuote to ArtWork  --  DONE
+// change KanyeQuote to ArtWorks  --  DONE
 
 // change displayQuote to displayArt  --  DONE
 
