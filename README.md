@@ -28,5 +28,5 @@ For the final project, you will be tasked with extracting data from a public API
     <li><a href="https://github.com/JSR-2-14/u3_lesson_react_props">Props</a></li>
     <li><a href="https://github.com/JSR-2-14/u3_lesson_react_mapping_components">Mapping Components</li>
     <li><a href="https://github.com/JSR-2-14/u3_lesson_intro_to_state">State & useState</li>
-    <li><a href="">Component Lifecycle & useEffect</li>
+    <li><a href="https://github.com/JSR-2-14/u3_lab_kanye_useEffect">Component Lifecycle & useEffect</li>
     <li><a href="https://github.com/JSR-2-14/u3_lesson_react_APIs">React w/ APIs</li>

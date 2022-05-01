@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import axios from 'axios'
 import ArtWorks from './components/ArtWorks'
+import artworks from './data/artworks.json'
 
 const App = () => {
   const [displayArt, setDisplayArt] = useState(false)
