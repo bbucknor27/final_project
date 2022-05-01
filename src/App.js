@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Banel's World of Art Works</h1>
+      <h1>World of Art Works</h1>
       <main>
         <div className="art-container">
           {displayArt ? (
