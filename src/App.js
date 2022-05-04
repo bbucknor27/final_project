@@ -2,7 +2,14 @@ import './App.css'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { BASE_URL, RANDOM_EMOJI_URL } from './globals'
-import Random from './components/Random'
+import Emoji from './components/Emoji'
+import EmojiSymbols from './components/EmojiSymbols'
+
+
+
+
+
+
 
 
 
