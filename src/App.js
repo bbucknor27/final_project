@@ -1,8 +1,10 @@
-import { useState } from 'react'
 import './App.css'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
-import ArtWorks from './components/ArtWorks'
-import artworksArrays from './data/artworks.json'
+import { BASE_URL, RANDOM_EMOJI_URL } from './globals'
+import Random from './components/Random'
+
+
 
 
 const App = () => {
