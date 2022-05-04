@@ -6,16 +6,16 @@ import Emoji from './components/Emoji'
 import EmojiSymbols from './components/EmojiSymbols'
 
 useEffect(() => {
-  const getExcuses = async () => {
-    const response = await axios.get(`${ALL_EXCUSES_URL}`)
+  const getXXX = async () => {
+    const response = await axios.get(`${RANDOM_EMOJI_URL}`)
     // console.log(response.data)
-    setExcuses(response.data)
+    setXXX(response.data)
   }
-  getExcuses()
+  getXXX()
 }, [])
 
 
-
+///////////// CHANGE EXCUSES XXX
 
 
 
