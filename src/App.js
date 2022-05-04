@@ -20,7 +20,16 @@ const App = () => {
             <ArtWorks displayArt={displayArt} />
           ) : (
             <h2>See Some ArtWorks</h2>
-          )}
+
+            {artworksArray.map((artworks) => (
+              <ArtWorks 
+              key={artworks.id} 
+              movie={artworks}
+              api_link={api_link}
+              // genres={movie.genres}
+              />
+
+          ))}
         </div>
 
         <button onClick={toggleArt}>
