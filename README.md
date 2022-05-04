@@ -1,4 +1,4 @@
-# Banel's Final Project: Getting Started with Create React App
+# Banel ::: Final Project: Create React App Website
 
 <h2>Overview</h2>
 
