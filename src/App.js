@@ -2,7 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import axios from 'axios'
 import ArtWorks from './components/ArtWorks'
-import artworks from './data/artworks.json'
+import artworksArrays from './data/artworks.json'
+
 
 const App = () => {
   const [displayArt, setDisplayArt] = useState(false)
@@ -20,27 +21,32 @@ const App = () => {
             <ArtWorks displayArt={displayArt} />
           ) : (
             <h2>See Some ArtWorks</h2>
+          )}
 
-            {artworksArray.map((artworks) => (
-              <ArtWorks 
-              key={artworks.id} 
-              movie={artworks}
-              api_link={api_link}
-              // genres={movie.genres}
-              />
+{artworksArray.map((artworks, index) => (
+        <div className="artworks" key={artworks.id}>
+            <ArtWorks artworks={artworks} key={artworks.id}/>
+        </div>
+      ))}
 
-          ))}
+
+
+
+
+
+
         </div>
 
         <button onClick={toggleArt}>
           {displayArt ? 'Clear Art' : 'New Art'}
-        </button>
+        </button> 
       </main>
+
     </div>
   )
 }
 
-export default App;
+export default App
 
 
 // review u3_hw_movie_mapping 

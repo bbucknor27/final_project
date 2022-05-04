@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
+const movie = props.artworks
+let releaseDate = (new Date(movie.release_date)).toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+
+
 const ArtWorks = ({ displayArt }) => {
   const [art, setArt] = useState('')
 
