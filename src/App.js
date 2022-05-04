@@ -22,7 +22,7 @@ const App = (props) => {
           {displayEmoji ? (
             <Emoji ddisplayEmoji={displayEmoji} />
           ) : (
-            <h2>See Some EEEmojis</h2>
+            <h2>See Some EEEmojis {Emoji}</h2>
           )}
 
         {emojiArray.map((emoji, index) => (
