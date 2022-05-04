@@ -2,73 +2,48 @@ import './App.css'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { BASE_URL, RANDOM_EMOJI_URL } from './globals'
+import emojiArray from './data/package-lock.json'
 import Emoji from './components/Emoji'
 import EmojiSymbols from './components/EmojiSymbols'
 
-useEffect(() => {
-  const getXXX = async () => {
-    const response = await axios.get(`${RANDOM_EMOJI_URL}`)
-    // console.log(response.data)
-    setXXX(response.data)
+
+const App = (props) => {
+  const [displayEmoji, setDisplayEmoji] = useState(false)
+
+  const toggleEmoji = () => {
+    displayEmoji ? setDisplayEmoji(false) : setDisplayEmoji(true)
   }
-  getXXX()
-}, [])
 
+  return (
+    <div className="App">
+      <h1>World of Emojis</h1>
+      <main>
+        <div className="emoji-container">
+          {displayEmoji ? (
+            <Emoji ddisplayEmoji={displayEmoji} />
+          ) : (
+            <h2>See Some EEEmojis</h2>
+          )}
 
-///////////// CHANGE EXCUSES XXX
+        {emojiArray.map((emoji, index) => (
+        <div className="emoji" key={emoji.id}>
+            <Emoji emoji={emoji} key={emoji.id}/>
+        </div>
+      ))}
 
+        </div>
 
+        <button onClick={toggleEmoji}>
+          {displayEmoji ? 'Clear Emoji' : 'New Emoji'}
+        </button> 
+      </main>
 
-
-
-// const App = () => {
-//   const [displayArt, setDisplayArt] = useState(false)
-
-//   const toggleArt = () => {
-//     displayArt ? setDisplayArt(false) : setDisplayArt(true)
-//   }
-
-//   return (
-//     <div className="App">
-//       <h1>World of Art Works</h1>
-//       <main>
-//         <div className="art-container">
-//           {displayArt ? (
-//             <ArtWorks displayArt={displayArt} />
-//           ) : (
-//             <h2>See Some ArtWorks</h2>
-//           )}
-
-// {artworksArray.map((artworks, index) => (
-//         <div className="artworks" key={artworks.id}>
-//             <ArtWorks artworks={artworks} key={artworks.id}/>
-//         </div>
-//       ))}
-
-
-
-
-
-
-
-//         </div>
-
-//         <button onClick={toggleArt}>
-//           {displayArt ? 'Clear Art' : 'New Art'}
-//         </button> 
-//       </main>
-
-//     </div>
-//   )
-// }
+    </div>
+  )
+}
 
 export default App
 
+//////////////////////////////////////////////////////////////
 
 // review u3_hw_movie_mapping 
-
-// change KanyeQuote to ArtWorks  --  DONE
-
-// change displayQuote to displayArt  --  DONE
-
-// change toggleQuote to toggleArt  --  DONE

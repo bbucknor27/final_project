@@ -1,34 +1,29 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const movie = props.artworks
-let releaseDate = (new Date(movie.release_date)).toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+const emoji = this.props.Emoji
+//let releaseDate = (new Date(movie.release_date)).toLocaleString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
 
 
-const ArtWorks = ({ displayArt }) => {
-  const [art, setArt] = useState('')
+const Emoji = ({ displayEmoji }) => {
+  const [emoji, setEmoji] = useState('')
 
   useEffect(() => {
     try {
-      const getArtWorks = async () => {
-        const response = await axios.get("https://api.artic.edu/api/v1/artworks/129884")
-        setArt(response.data.art)
+      const getEmoji = async () => {
+        const response = await axios.get("https://emojihub.herokuapp.com/api/all")
+        setEmoji(response.data.emoji)
       }
-      getArtWorks()
+      getEmoji()
     } catch (error) {
       return console.error
     }
-  }, [displayArt])
+  }, [displayEmoji])
 
   return (
-    <h2 style={{fontStyle: 'italic'}}>{art !== '' && art}</h2>
+    <h2 style={{fontStyle: 'italic'}}>{emoji !== '' && emoji}</h2>
   )
 }
 
-export default ArtWorks
+export default Emoji
 
-// export default ArtWorks
-
-// change KanyeQuote to ArtWorks  --  DONE
-
-// change displayQuote to displayArt  --  DONE
