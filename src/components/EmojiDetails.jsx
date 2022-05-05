@@ -18,41 +18,43 @@ const EmojiDetails = (props) => {
         console.log(response)
         setEmojiDetails(response.data)
         // setEmoji(response.data.emoji)
-      }
+    }
 
       getDetails()
-    }, [props.selectedEmoji] 
+  }, [props.selectedEmoji] 
 
-
-  return (
-    <div>
-      {emojiDetails ? (
-        <div className="emojidetails">
-          <img src={'${emojiDetails.image}'} />
-          <h3>{emogiName.emoji}</h3>
-          
-          <div>
-            Emoji.propTypes = {
-              size: PropTypes.string,
-              lineHeight: PropTypes.string,
-            }
-
-
-</div>
-                    <button onClick={props.goBack}>Go Back</button>
-                </div>
-                
-
-        </div>
-
-      )}
-
-  )
-  }
-    </div>
-  )
+)}
 
   export default EmojiDetails
+
+//   return (
+//     <div>
+//       {emojiDetails ? (
+//         <div className="container">
+//           <img src={'${emojiDetails.image}'} />
+//           <h3>{emogiName.emoji}</h3>
+          
+//           <div>
+//             Emoji.propTypes = {
+//               size: PropTypes.string,
+//               lineHeight: PropTypes.string,
+//             }
+
+
+// </div>
+//                     <button onClick={props.goBack}>Go Back</button>
+//                 </div>
+                
+
+//         </div>
+
+//       )}
+
+//   )
+//   }
+//     </div>
+//   )
+
 
 
   // <p className="icon">{emoji.PropTypes.oneOf(allEmojiNames(emojis))}</p>
@@ -75,6 +77,3 @@ const EmojiDetails = (props) => {
   // return (
   //   <h2 style={{fontStyle: 'italic'}}>{emoji !== '' && emoji}</h2>
   // )
-
-
-
