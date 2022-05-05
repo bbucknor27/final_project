@@ -3,8 +3,9 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { BASE_URL, RANDOM_EMOJI_URL } from './globals'
 import emojiArray from './data/package-lock.json'
-import Emoji from './components/Emoji'
+import EmojiDetails from './components/EmojiDetails'
 import EmojiSymbols from './components/EmojiSymbols'
+import EmojiData from './components/EmojiDetails'
 
 
 const App = (props) => {
@@ -22,7 +23,7 @@ const App = (props) => {
           {displayEmoji ? (
             <Emoji ddisplayEmoji={displayEmoji} />
           ) : (
-            <h2>See Some EEEmojis {Emoji}</h2>
+            <h2>See Some EEEmojis</h2>
           )}
 
         {emojiArray.map((emoji, index) => (

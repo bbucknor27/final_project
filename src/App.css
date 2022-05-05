@@ -1,7 +1,7 @@
 /**/
 body {
-  /* background: #fff; */
-  background-image: url("./assets/vecteezy_eye-vector-logo-for-beauty-salon-woman-face-silhouette_6326942.jpg");
+  background: rgb(206, 238, 207);
+  /* background-image: url("./assets/vecteezy_eye-vector-logo-for-beauty-salon-woman-face-silhouette_6326942.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 500px;
@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 125px;
+  margin-top: 125px; */
 }
 
 .App {
