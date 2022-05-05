@@ -24,25 +24,28 @@ const EmojiDetails = (props) => {
     }, [props.selectedEmoji] 
 
 
-
   return (
     <div>
       {emojiDetails ? (
         <div className="emojidetails">
           <img src={'${emojiDetails.image}'} />
-          <h3>{emogiName: emoji}</h3>
+          <h3>{emogiName.emoji}</h3>
           
           <div>
             Emoji.propTypes = {
-            emoji: PropTypes.oneOf(allEmojiNames(emojis)),
-            size: PropTypes.string,
-            lineHeight: PropTypes.string,
-          };
+              size: PropTypes.string,
+              lineHeight: PropTypes.string,
+            }
+
+
+</div>
+                    <button onClick={props.goBack}>Go Back</button>
+                </div>
+                
 
         </div>
 
       )}
-
 
   )
   }
